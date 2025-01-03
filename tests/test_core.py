@@ -3,13 +3,13 @@ from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import serialization, hashes
 from cryptography.hazmat.primitives.asymmetric import padding
 
-from license_manager.license_control import LicenseControls
+from license_control.license_control import LicenseControl
 import base64
 import hashlib
 
 from cryptography.fernet import Fernet
 
-bios_time = LicenseControls.get_bios_time()
+bios_time = LicenseControl.get_bios_time()
 print("BIOS 时间:", bios_time)
 
 custom_key = "my_secret_key"

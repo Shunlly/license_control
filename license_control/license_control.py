@@ -4,8 +4,7 @@ from venv import logger
 
 from cryptography.fernet import Fernet
 from datetime import datetime, timedelta
-import base64
-import os
+
 
 class LicenseControl:
     def __init__(self, key=None):
