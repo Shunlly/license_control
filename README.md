@@ -11,19 +11,19 @@
 ## 安装
 
 ```bash
-pip install license-manager-py
+pip install license-control
 ```
 
 ## 基本使用
 
 ```python
-from license_manager.license_control import LicenseManager
+from license_control.license_control import LicenseControl
 
 # 初始化许可证管理器
 
 
 key = "mxey3_GNnYDQXsIxK4NABQ0eqmr47coXJLKLkqcdpjU="
-lm = LicenseManager(key)
+lm = LicenseControl(key)
 # 生成许可证
 license = lm.generate_license()
 
